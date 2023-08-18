@@ -9,23 +9,23 @@
 
 int main(void)
 {
-long number = 612852475143;
-int inc;
-while (inc++ < number / 2)
+long num = 612852475143;
+int i;
+while (i++ < num / 2)
 {
-if (number % inc == 0)
+if (num % i == 0)
 {
-number /= 2;
+num /= 2;
 continue;
 }
 
-for (inc = 3; inc < number / 2; inc += 2)
+for (i = 3; i < num / 2; i += 2)
 {
-if (number % inc == 0)
-number /= inc;
+if (num % i == 0)
+num /= i;
 
 }
 }
-printf("%ld\n", number);
+printf("%ld\n", num);
 return (0);
 }
