@@ -7,21 +7,21 @@
  
 void print_triangle(int size)
 {
-	int rows, columns, x;
+int rows, columns, x;
 
-	if (size <= 0)
-		_putchar('\n');
+if (size <= 0)
+	_putchar('\n');
 
-	for (rows = 0; rows < size; rows++)
+for (rows = 0; rows < size; rows++)
+{
+	for (columns = size - rows; columns > 1; columns--)
 	{
-		for (columns = size - rows; columns > 1; columns--)
-		{
-			_putchar(' ');
-		}
-		for (x = rows + columns; x >= 1; x--)
-		{
-			_putchar(35);
-		}
-			_putchar(10);
+		_putchar(' ');
 	}
+	for (x = rows + columns; x >= 1; x--)
+	{
+		_putchar('#');
+	}
+		_putchar(10);
+}
 }
