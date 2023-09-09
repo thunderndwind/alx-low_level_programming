@@ -7,7 +7,6 @@
  *
  * Return: pointer to the address of the memory block
  */
- 
 void *malloc_checked(unsigned int b)
 {
 	void *mblock;
@@ -15,6 +14,5 @@ void *malloc_checked(unsigned int b)
 	mblock = malloc(b);
 	if (mblock == NULL)
 		exit(98);
-
 	return (mblock);
 }
